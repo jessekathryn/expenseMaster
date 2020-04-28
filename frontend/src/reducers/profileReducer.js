@@ -1,14 +1,24 @@
-export default function accountReducer(state = {accounts: []}, action) {
+export default function profileReducer(state = {profiles: []}, action) {
     switch (action.type) {
-      case 'FETCH_ACCOUNTS':
-        return {accounts: action.payload}
-      case 'ADD_ACCOUNT':
-        return {...state, accounts: [...state.accounts, action.payload]}
-      case 'ADD_TRANSACTION':
-        let accounts = state.accounts.map(account => {
-          if (account.id === action.payload.id) {
+      case 'FETCH_PROFILES':
+        return {profiles: action.payload}
+      case 'ADD_PROFILE':
+        return {...state, profiles: [...state.profiles, action.payload]}
+      case 'ADD_ACTIVITY':
+        let profiles = state.profiles.map(profile => {
+          if (profile.id === action.payload.id) {
             return action.payload
           } else {
-            return account
+            return profile
           }
         })
+        return {...state, profiles: profiles}
+      case 'DELETE_ACTIVITY':
+      let profilesTwo = state.profiles.map(profile => {
+        if (profile.id === action.payload.id) {
+          return action.payload
+        } else {
+          return profile
+        }
+      })
+      return {...state, profiles: profilesTwo}
