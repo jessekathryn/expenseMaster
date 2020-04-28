@@ -42,7 +42,7 @@ class Api::V1::ActivitiesController < ApplicationController
   
   
     def activity_params
-      params.require(:activity).permit(:amount, :profile_id, :kind, :date, :description)
+      params.require(:activity).permit(:amount, :type, :date, :decription, :profile_id, :expense_for )
     end
   
   

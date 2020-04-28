@@ -2,8 +2,6 @@ class Profile < ApplicationRecord
     has_many :activities
     validates :name, :balance, presence: true
 
-
-
 def update_balance(activity)
     if activity.type == 'deposit'
         self.balance = self.balance + activity.amount

@@ -34,7 +34,7 @@ class Api::V1::ProfilesController < ApplicationController
     private
 
     def profile_params
-      params.require(:profile).permit(:name, :balance)
+      params.require(:profile).permit(:name, :balance, :debt)
     end
 
 
