@@ -1,5 +1,5 @@
 class Api::V1::ActivitiesController < ApplicationController
-    before_action :set_account
+    before_action :set_profile
   
     def index
       @activities = Activity.all
