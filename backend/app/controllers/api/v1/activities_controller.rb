@@ -25,7 +25,7 @@ class Api::V1::ActivitiesController < ApplicationController
   
     def destroy
       @activity = Activity.find(params["id"])
-      @profile = Profile.find(@activity.account_id)
+      @profile = Profile.find(@activity.profile_id)
       if @profile.update_balance_on_delete(@activity)
         @activity.destroy
         render json: @profile

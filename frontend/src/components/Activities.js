@@ -27,4 +27,4 @@ state = {}
         }
       }
       
-export default connect(null, {deleteActivity})(activities)   
+export default connect(null, {deleteActivity})(Activities)   
