@@ -14,7 +14,7 @@ export default function profileReducer(state = {profiles: []}, action) {
         })
         return {...state, profiles: profiles}
       case 'DELETE_ACTIVITY':
-      let profilesTwo = state.profiles.map(profile => {
+        let profilesTwo = state.profiles.map(profile => {
         if (profile.id === action.payload.id) {
           return action.payload
         } else {
@@ -22,3 +22,16 @@ export default function profileReducer(state = {profiles: []}, action) {
         }
       })
       return {...state, profiles: profilesTwo}
+      case 'EDIT_PROFILE':
+        let profilesThree = state.profiles.map(profile => {
+        if (profile.id === action.payload.id) {
+          return action.payload
+        } else {
+          return profile
+        }
+      })
+      return {...state, profiles: profilesThree}
+    default:
+      return state
+  }
+}
