@@ -20,7 +20,7 @@ def update_balance(activity)
 
 def update_balance_on_delete(activity)
     if activity.type == 'deposit'
-        self.balance >= activity.amount
+      if self.balance >= activity.amount
         self.balance = self.balance - activity.amount
         self.save
         else
