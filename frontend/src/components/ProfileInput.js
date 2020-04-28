@@ -5,7 +5,7 @@ import {addProfile} from '../actions/addProfile'
 class ProfileInput extends React.Component {
 
     state = {
-        name: ''
+        name: '',
         balance: ''
     }
 

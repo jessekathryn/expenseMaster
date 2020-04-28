@@ -1,3 +1,5 @@
+export const addProfile = (data) => {
+
 return (dispatch) => {
     fetch('http://localhost:3000/api/v1/profiles', {
       headers: {
@@ -8,7 +10,7 @@ return (dispatch) => {
       body: JSON.stringify(data)
     })
     .then(response => response.json())
-    .then(account => dispatch({type: 'ADD_PROFILE', payload: profile}))
+    .then(profile => dispatch({type: 'ADD_PROFILE', payload: profile}))
   }
 
 }
