@@ -1,28 +1,18 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
-import ProfileEdit from './ProfileEdit'
+import {Route, Link} from 'react-router-dom'
+import Profile from './Profile'
 
-import ActivitiesContainer from '../containers/ActivitiesContainer'
+const Profiles = (props) => {
 
-const Profile = (props) => {
-
-    console.log(props)
-
-    let profile = props.profiles.filter(profile => profile.id == props.match.params.id)[0]
-    console.log(profile)
-
-    return (  
-
+  return (
     <div>
-      <h2>
-        {Profile ? Profile.name : null} - {Profile ? Profile.balance : null}
-      </h2>
-      <ActivitiesContainer Profile={Profile}/><br/>
-      <h4>Edit Profile</h4>
-      <ProfileEdit Profile={Profile}/>
+      {props.profiles.map(profile =>
+        <li key={profile.id}>
+          <Link to={`/profiles/${profile.id}`}>{profile.name} - ${profile.balance}</Link>
+        </li> )}
     </div>
-  )
 
+  )
 }
 
-export default Profile
+export default Profiles
