@@ -28,12 +28,12 @@ class ActivityInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Activity Type:</label>
+          <label>Type:</label>
           <select name="type" value={this.state.type} onChange={this.handleChange}>
             <option>deposit</option>
             <option>debit</option>
           </select>
-          <label>Activity Amount:</label>
+          <label> Amount: </label>
           <input type="text" name="amount" value={this.state.amount} onChange={this.handleChange}/>
           <input type="submit"/>
         </form>

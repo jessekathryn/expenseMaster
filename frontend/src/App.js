@@ -1,5 +1,7 @@
 import React from 'react';
-import {connect} from 'react-redux'
+
+import { connect } from 'react-redux'
+
 import ProfilesContainer from './containers/ProfilesContainer'
 
 class App extends React.Component {
@@ -12,6 +14,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 export default App;

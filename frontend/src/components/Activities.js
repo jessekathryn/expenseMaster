@@ -12,7 +12,7 @@ state = {}
 
 
     Visits = (id) => {
-        this.state[id] ? this.setState({[id]: this.state[id] += 1}) : this.setState({[id]: 1})
+        this.state[id] ? this.setState({[id]: this.setState[id] += 1}) : this.setState({[id]: 1})
       }
       
     

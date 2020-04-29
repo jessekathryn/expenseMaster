@@ -1,7 +1,7 @@
-export const addActivity = (activity, profileId) => {
+export const addActivity = (activity, id) => {
 
     return (dispatch) => {
-      fetch(`http://localhost:3000/api/v1/profiles/${profileId}/activities`, {
+      fetch(`http://localhost:3000/api/v1/profiles/${id}/activities`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

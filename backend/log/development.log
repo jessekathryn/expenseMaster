@@ -23,3 +23,376 @@ Migrating to CreateProfiles (20200428214354)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:14:01 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 2492)
+
+
+Started POST "/api/v1/profiles" for ::1 at 2020-04-28 21:14:15 -0400
+Processing by Api::V1::ProfilesController#create as JSON
+  Parameters: {"name"=>"business", "balance"=>"20", "profile"=>{"name"=>"business", "balance"=>"20"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+  [1m[36mProfile Create (1.0ms)[0m  [1m[32mINSERT INTO "profiles" ("name", "balance") VALUES (?, ?)[0m  [["name", "business"], ["balance", 20.0]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5460)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:22:17 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.22ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.6ms | Allocations: 13349)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:26:19 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.48ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 2633)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:26:41 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1194)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:26:56 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 2633)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:27:18 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1194)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:27:44 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.78ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 2615)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:30:49 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 2615)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:31:07 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1176)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:31:28 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.75ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 2615)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:32:17 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.62ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 2615)
+
+
+  
+SyntaxError (/Users/jessebarnes/expenseMaster/backend/app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...  validates :amount, presence :true
+...                              ^):
+  
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/activity.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:34:11 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.71ms)
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 1.0ms | Allocations: 13467)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:37:15 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.19ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.2ms | Allocations: 2320)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:37:55 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.84ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 2314)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:38:28 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.21ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 2314)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:44:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.57ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 1.0ms | Allocations: 2345)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:45:47 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.95ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 2295)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:47:19 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.02ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2295)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:47:35 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.17ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 2295)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:50:20 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.01ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2295)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 21:57:01 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.24ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 2332)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:00:00 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2295)
+
+
+Started POST "/api/v1/profiles" for ::1 at 2020-04-28 22:00:16 -0400
+Processing by Api::V1::ProfilesController#create as JSON
+  Parameters: {"name"=>"business2", "balance"=>"20.00", "profile"=>{"name"=>"business2", "balance"=>"20.00"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+  [1m[36mProfile Create (4.7ms)[0m  [1m[32mINSERT INTO "profiles" ("name", "balance") VALUES (?, ?)[0m  [["name", "business2"], ["balance", 20.0]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:10:in `create'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:11:in `create'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.47ms)
+Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 5.8ms | Allocations: 3742)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:01:51 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.29ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 3675)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:03:06 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.02ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 3675)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:09:48 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (1.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.74ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.7ms | Allocations: 3712)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:10:08 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.46ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms | Allocations: 3675)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-28 22:11:44 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.81ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.6ms | Allocations: 3681)
+
+
