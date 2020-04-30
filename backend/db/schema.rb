@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_04_28_214354) do
   create_table "activities", force: :cascade do |t|
     t.integer "profile_id"
     t.decimal "amount"
-    t.string "type"
+    t.string "kind"
     t.datetime "date"
     t.string "description"
     t.string "expense_for"

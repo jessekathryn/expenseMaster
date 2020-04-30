@@ -3,10 +3,10 @@ class Profile < ApplicationRecord
     validates :name, :balance, presence: true
 
 def update_balance(activity)
-    if activity.type == 'deposit'
+    if activity.kind == 'deposit'
         self.balance = self.balance + activity.amount
         self.save
-    elsif activity.type == 'debit'
+    elsif activity.kind == 'debit'
         if self.balance >= activity.amount
           self.balance = self.balance - activity.amount
           self.save
@@ -17,7 +17,7 @@ def update_balance(activity)
     end
 
 def update_balance_on_delete(activity)
-    if activity.type == 'deposit'
+    if activity.kind == 'deposit'
       if self.balance >= activity.amount
         self.balance = self.balance - activity.amount
         self.save
@@ -25,7 +25,7 @@ def update_balance_on_delete(activity)
             return 'Balance too low'
         end
     elsif
-        activity.type == 'debit' 
+        activity.kind == 'debit' 
         self.balance = self.balance + activity.amount
         self.save
     end
