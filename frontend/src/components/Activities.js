@@ -10,7 +10,7 @@ state = {}
         this.props.deleteActivity(activity.id, activity.profile_id)
     }
 
-    Visit = (id) => {
+    visit = (id) => {
         this.state[id] ? this.setState({[id]: this.state[id] += 1}) : this.setState({[id]: 1})
       }
       
