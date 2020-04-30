@@ -13751,3 +13751,1162 @@ Processing by Api::V1::ProfilesController#index as */*
 Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.9ms | Allocations: 8664)
 
 
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:04:31 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.04ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:05:06 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.8ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:05:24 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.38ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 1.2ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:05:32 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.02ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:05:35 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.24ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:05:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.33ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 2.1ms | Allocations: 20119)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:06:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.39ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 1.6ms | Allocations: 18650)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:06:59 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.59ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 1.4ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:07:55 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.05ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:08:22 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.13ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 1.3ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:08:47 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.74ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 2.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:09:23 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.23ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:11:19 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.03ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:12:36 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.64ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:14:35 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.35ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.9ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:14:43 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.29ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:14:50 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.8ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:14:55 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.52ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:00 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.2ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:06 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.15ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:12 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.45ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 1.2ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:20 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.53ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.7ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:30 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.53ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 1.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:36 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.62ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.7ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:15:44 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.04ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.7ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:16:09 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.57ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 1.0ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:16:21 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.22ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:16:28 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.69ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:16:36 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.6ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:16:47 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.83ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:17:25 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (9.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.74ms)
+Completed 200 OK in 23ms (Views: 12.6ms | ActiveRecord: 10.1ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:06 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.97ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.7ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:10 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.58ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 1.3ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:34 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.97ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 1.4ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:42 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.35ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:43 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.19ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.9ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:53 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.93ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:56 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.06ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 1.4ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:18:58 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.35ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:01 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.2ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:03 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.1ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 1.1ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:08 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.76ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.8ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:30 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.14ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:51 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.29ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:19:57 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.97ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:15 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.56ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.7ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:19 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.48ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.8ms | Allocations: 8667)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:25 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.55ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.9ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:30 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.86ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:37 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.49ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 1.0ms | Allocations: 8664)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:20:55 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.47ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.8ms | Allocations: 8664)
+
+
+Started DELETE "/api/v1/profiles/1/activities/2" for ::1 at 2020-04-30 01:20:57 -0400
+Processing by Api::V1::ActivitiesController#destroy as */*
+  Parameters: {"profile_id"=>"1", "id"=>"2"}
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:40:in `set_profile'
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:27:in `destroy'
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:28:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "balance" = ? WHERE "profiles"."id" = ?[0m  [["balance", 40.0], ["id", 1]]
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/activities_controller.rb:31:in `destroy'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (2.15ms)
+Completed 200 OK in 20ms (Views: 2.4ms | ActiveRecord: 3.3ms | Allocations: 7393)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:21:20 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.41ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 1.1ms | Allocations: 8460)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:21:26 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"molly", "balance"=>"20.00", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"molly", "balance"=>"20.00"}}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[36mProfile Update (0.5ms)[0m  [1m[33mUPDATE "profiles" SET "name" = ? WHERE "profiles"."id" = ?[0m  [["name", "molly"], ["id", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.99ms)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 1.7ms | Allocations: 4669)
+
+
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 01:22:01 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.91ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.6ms | Allocations: 8460)
+
+
+Started DELETE "/api/v1/profiles/1/activities/3" for ::1 at 2020-04-30 01:22:04 -0400
+Processing by Api::V1::ActivitiesController#destroy as */*
+  Parameters: {"profile_id"=>"1", "id"=>"3"}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:40:in `set_profile'
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:27:in `destroy'
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:28:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "balance" = ? WHERE "profiles"."id" = ?[0m  [["balance", 20.0], ["id", 1]]
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[36mActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/activities_controller.rb:31:in `destroy'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.76ms)
+Completed 200 OK in 18ms (Views: 2.1ms | ActiveRecord: 10.5ms | Allocations: 6857)
+
+
+Started DELETE "/api/v1/profiles/1/activities/4" for ::1 at 2020-04-30 01:22:05 -0400
+Processing by Api::V1::ActivitiesController#destroy as */*
+  Parameters: {"profile_id"=>"1", "id"=>"4"}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:40:in `set_profile'
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:27:in `destroy'
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:28:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "balance" = ? WHERE "profiles"."id" = ?[0m  [["balance", 40.0], ["id", 1]]
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/profile.rb:30:in `update_balance_on_delete'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[36mActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/activities_controller.rb:31:in `destroy'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.94ms)
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 11.5ms | Allocations: 8363)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:22:30 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"Meals", "balance"=>"150.00", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"Meals", "balance"=>"150.00"}}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "name" = ? WHERE "profiles"."id" = ?[0m  [["name", "Meals"], ["id", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.77ms)
+Completed 200 OK in 9ms (Views: 2.1ms | ActiveRecord: 3.4ms | Allocations: 4312)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:22:42 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"", "balance"=>"20.00", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"", "balance"=>"20.00"}}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.84ms)
+Completed 200 OK in 26ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 5937)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:22:48 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"", "balance"=>"100", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"", "balance"=>"100"}}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.69ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 3012)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:22:56 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"molly", "balance"=>"20.00", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"molly", "balance"=>"20.00"}}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[36mProfile Update (0.4ms)[0m  [1m[33mUPDATE "profiles" SET "name" = ? WHERE "profiles"."id" = ?[0m  [["name", "molly"], ["id", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.59ms)
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 10.3ms | Allocations: 4312)
+
+
+Started DELETE "/api/v1/profiles/1/activities/5" for ::1 at 2020-04-30 01:23:01 -0400
+Processing by Api::V1::ActivitiesController#destroy as */*
+  Parameters: {"profile_id"=>"1", "id"=>"5"}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:40:in `set_profile'
+  [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:27:in `destroy'
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/activities_controller.rb:28:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "balance" = ? WHERE "profiles"."id" = ?[0m  [["balance", 20.0], ["id", 1]]
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/profile.rb:23:in `update_balance_on_delete'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/activities_controller.rb:30:in `destroy'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/activities_controller.rb:31:in `destroy'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (7.62ms)
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 2.9ms | Allocations: 6499)
+
+
+Started PATCH "/api/v1/profiles/1" for ::1 at 2020-04-30 01:23:27 -0400
+Processing by Api::V1::ProfilesController#update as JSON
+  Parameters: {"name"=>"School", "balance"=>"", "id"=>"1", "profile"=>{"id"=>"1", "name"=>"School", "balance"=>""}}
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:28:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[36mProfile Update (0.3ms)[0m  [1m[33mUPDATE "profiles" SET "name" = ? WHERE "profiles"."id" = ?[0m  [["name", "School"], ["id", 1]]
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:29:in `update'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:31:in `update'
+[active_model_serializers] Rendered ProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.3ms)
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 10.0ms | Allocations: 4127)
+
+
