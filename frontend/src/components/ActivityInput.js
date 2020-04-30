@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 import {addActivity} from '../actions/addActivity'
 
 class ActivityInput extends React.Component {
@@ -11,7 +11,7 @@ class ActivityInput extends React.Component {
 
   handleChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     })
   }
 
@@ -28,12 +28,12 @@ class ActivityInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Kind:</label>
-          <select name="type" value={this.state.kind} onChange={this.handleChange}>
+          <label>Type:</label>
+          <select name="kind" value={this.state.kind} onChange={this.handleChange}>
             <option>deposit</option>
             <option>debit</option>
           </select>
-          <label> Amount: </label>
+          <label>Amount:</label>
           <input type="text" name="amount" value={this.state.amount} onChange={this.handleChange}/>
           <input type="submit"/>
         </form>
