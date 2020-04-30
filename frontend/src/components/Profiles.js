@@ -1,7 +1,6 @@
-import React from 'react';
-import Profile from './Profile';
-
-import {Route, Link} from 'react-router-dom';
+import React from 'react'
+import Profile from './Profile'
+import {Route, Link} from 'react-router-dom'
 
 const Profiles = (props) => {
 console.log(props)
@@ -10,9 +9,8 @@ console.log(props)
       {props.profiles.map(profile =>
         <li key={profile.id}>
         <Link to={`/profiles/${profile.id}`}>{profile.name} - ${profile.balance}</Link>
-        </li> )}
+        </li>)}
     </div>
-
   )
 }
 

@@ -12,12 +12,11 @@ const Profile = (props) => {
     return (  
     <div>
       <h2>
-        {Profile ? Profile.name : null} - {Profile ? Profile.balance : null}
+        {profile ? profile.name : null} - {profile ? profile.balance : null}
       </h2>
-      <ActivitiesContainer Profile={Profile}/><br/>
-
-      <h4>Edit Profile</h4>
-      <ProfileEdit Profile={Profile}/>
+      <ActivitiesContainer profile={profile}/><br/>
+      <h4>Edit</h4>
+      <ProfileEdit profile={profile}/>
     </div>
   )
 }
