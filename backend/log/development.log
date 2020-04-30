@@ -13186,3 +13186,287 @@ Started GET "/api/v1/profiles" for ::1 at 2020-04-29 23:34:27 -0400
   [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("profile_id", "amount", "kind", "description", "expense_for") VALUES (?, ?, ?, ?, ?)[0m  [["profile_id", 1], ["amount", 20.0], ["kind", "debit"], ["description", "Subway"], ["expense_for", "Meal"]]
   [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:19:52 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (65.11ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 2.4ms | Allocations: 29603)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:21:54 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.07ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms | Allocations: 8132)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:22:32 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.42ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.9ms | Allocations: 8132)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:24:50 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.05ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 8132)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:26:09 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.86ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms | Allocations: 8132)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:29:50 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.39ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms | Allocations: 8114)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:30:59 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.08ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 8112)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:34:16 -0400
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.91ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms | Allocations: 8112)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/serializers/activity_serializer.rb:5:in `date'
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:35:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.6ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.29ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 2.8ms | Allocations: 20060)
+
+
+  
+NoMethodError (undefined method `decription' for #<Activity:0x00007fb28f9a88e8>
+Did you mean?  description
+               description?
+               description=):
+  
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:36:53 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.78ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.1ms | Allocations: 19984)
+
+
+  
+NoMethodError (undefined method `decription' for #<Activity:0x00007fb28f8add58>
+Did you mean?  description
+               description?
+               description=):
+  
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:37:27 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (48.07ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 1.5ms | Allocations: 25036)
+
+
+  
+NoMethodError (undefined method `decription' for #<Activity:0x00007fc3b68ad410>
+Did you mean?  description
+               description?
+               description=):
+  
+app/controllers/api/v1/profiles_controller.rb:5:in `index'
+Started GET "/api/v1/profiles" for ::1 at 2020-04-30 00:38:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::ProfilesController#index as */*
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mActivity Load (0.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities" WHERE "activities"."profile_id" = ?[0m  [["profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/profiles_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.24ms)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 2.2ms | Allocations: 18697)
+
+

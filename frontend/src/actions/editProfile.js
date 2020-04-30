@@ -9,7 +9,7 @@ export const editProfile = (data) => {
         body: JSON.stringify(data)
       })
       .then(response => response.json())
-      .then(profile => dispatch({type: 'EDIT_PROFILE', payload: profile}))
-    }
+      .then(profile => dispatch({type: 'EDIT_PROFILE', payload: profile}));
+    };
   
-  }
+  };

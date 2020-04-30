@@ -29,7 +29,7 @@ class ProfileEdit extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Name: </label>
+          <label>Profile Name: </label>
           <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}/><br/>
           <label>Balance: </label>
           <input type='text' placeholder='Balance' value={this.state.balance} name="balance" onChange={this.handleChange}/><br/>
@@ -41,8 +41,8 @@ class ProfileEdit extends React.Component {
 }
 
 ProfileEdit.defaultProps = {
-    profiles: {}
-  }
-  
-  
+  profiles: {}
+}
+
+
 export default connect(null, {editProfile})(ProfileEdit)

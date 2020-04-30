@@ -11,8 +11,8 @@ state = {}
     }
 
 
-    Visits = (id) => {
-        this.state[id] ? this.setState({[id]: this.setState[id] += 1}) : this.setState({[id]: 1})
+    Visit = (id) => {
+        this.state[id] ? this.setState({[id]: this.state[id] += 1}) : this.setState({[id]: 1})
       }
       
     
@@ -20,7 +20,7 @@ state = {}
         return (
             <div>
               {this.props.activities && this.props.activities.map(activity =>
-                <li key={activity.id}>{activity.date} - {activity.kind} - {activity.amount}  <button onClick={() => this.vote(activity.id)}>Vote {this.state[activity.id] ? this.state[activity.id] : 0}</button><button onClick={() => this.handleDelete(activity)}>Delete</button></li>
+                <li key={activity.id}>{activity.date} - {activity.kind} - {activity.amount}  <button onClick={() => this.visit(activity.id)}>Visit {this.state[activity.id] ? this.state[activity.id] : 0}</button><button onClick={() => this.handleDelete(activity)}>Delete</button></li>
               )}
             </div>
           )

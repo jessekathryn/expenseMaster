@@ -1,11 +1,11 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import {Route, Switch} from 'react-router-dom'
-import {fetchProfiles} from '../actions/fetchProfiles'
-import Profiles from '../components/Profiles'
-import Profile from '../components/Profile'
-import ProfileInput from '../components/ProfileInput'
-import NavBar from '../components/NavBar'
+import React from 'react';
+import {connect} from 'react-redux';
+import {Route, Switch} from 'react-router-dom';
+import {fetchProfiles} from '../actions/fetchProfiles';
+import Profiles from '../components/Profiles';
+import Profile from '../components/Profile';
+import ProfileInput from '../components/ProfileInput';
+import NavBar from '../components/NavBar';
 
 class ProfilesContainer extends React.Component {
 

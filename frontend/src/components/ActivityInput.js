@@ -5,13 +5,13 @@ import {addActivity} from '../actions/addActivity'
 class ActivityInput extends React.Component {
 
   state = {
-    type: 'deposit',
+    kind: 'deposit',
     amount: ''
   }
 
   handleChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     })
   }
 
@@ -19,7 +19,7 @@ class ActivityInput extends React.Component {
     event.preventDefault()
     this.props.addActivity(this.state, this.props.profile.id)
     this.setState({
-      type: 'deposit',
+      kind: 'deposit',
       amount: ''
     })
   }
@@ -28,8 +28,8 @@ class ActivityInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Type:</label>
-          <select name="type" value={this.state.type} onChange={this.handleChange}>
+          <label>Kind:</label>
+          <select name="type" value={this.state.kind} onChange={this.handleChange}>
             <option>deposit</option>
             <option>debit</option>
           </select>

@@ -5,6 +5,6 @@ export function fetchProfiles() {
       .then(profiles => dispatch({
         type: 'FETCH_PROFILES',
         payload: profiles
-      }))
-    }
+      }));
+    };
   }
