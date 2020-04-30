@@ -13,11 +13,11 @@
 ActiveRecord::Schema.define(version: 2020_04_28_214354) do
 
   create_table "activities", force: :cascade do |t|
+    t.integer "profile_id"
     t.decimal "amount"
     t.string "type"
     t.datetime "date"
-    t.string "descrription"
-    t.integer "profile_id"
+    t.string "description"
     t.string "expense_for"
   end
 

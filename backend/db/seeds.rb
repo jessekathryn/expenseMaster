@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-profile_1 = Profile.create(name: 'Jesse')
+profile_1 = Profile.create(name: 'Checking', balance: '20.00', debt: '-55.00')
+activity_1 = Activity.create( profile_id: '1', amount: '20.00', type: 'deposit', date: 'DateTime.now', decription: 'Subway', expense_for: 'Meal' )
+activity_2 = Activity.create( profile_id: '1', amount: '20.00', type: 'debit', date: 'DateTime.now', decription: 'Subway', expense_for: 'Meal' )
