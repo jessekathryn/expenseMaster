@@ -56,6 +56,8 @@ const MenuItemWithChildren = ({ item, linkClassNames, subMenuClassNames, activat
 const MenuItem = ({ item, className, linkClassName }) => {
     return (
         <li className={classNames('side-nav-item', className)}>
+             <Link to="/profiles" style={{ paddingRight: "10px" }}>Profiles</Link>
+            <Link to="/profiles/new">Add Profile</Link>
             <MenuItemLink item={item} className={linkClassName} />
         </li>
     );
