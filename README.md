@@ -3,7 +3,8 @@
 expense React/Redux app geared toward farmers 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Expense Master Available Scripts
+## Expense Master 
+## Available Scripts
 
 In the project directory, you can run:
 
