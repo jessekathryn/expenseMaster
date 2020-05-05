@@ -10,7 +10,8 @@ const Profile = (props) => {
 	return (
 		<div>
 			<h2>
-				{profile ? profile.name : null} - {profile ? profile.balance : null}
+	
+			{profile ? profile.name : null} - {profile ? profile.balance : null}
 			</h2>
 			<ActivitiesContainer profile={profile} />
 			<br />

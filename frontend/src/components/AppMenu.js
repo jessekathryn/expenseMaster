@@ -22,7 +22,7 @@ const MenuItemWithChildren = ({ item, linkClassNames, subMenuClassNames, activat
                 <span> {item.name} </span>
                 <span className="menu-arrow"></span>
             </Link>
-
+            
             <ul
                 className={classNames(subMenuClassNames, 'mm-collapse', {
                     'mm-collapsed mm-show': activatedMenuItemIds.indexOf(item.id) >= 0,
@@ -56,8 +56,6 @@ const MenuItemWithChildren = ({ item, linkClassNames, subMenuClassNames, activat
 const MenuItem = ({ item, className, linkClassName }) => {
     return (
         <li className={classNames('side-nav-item', className)}>
-             <Link to="/profiles" style={{ paddingRight: "10px" }}>Profiles</Link>
-            <Link to="/profiles/new">Add Profile</Link>
             <MenuItemLink item={item} className={linkClassName} />
         </li>
     );
@@ -86,8 +84,8 @@ class AppMenu extends Component {
     };
 
     componentDidMount = () => {
-        if (!this.props.menu.menuItems) this.props.initMenu();
-        else this.initMenu();
+        // if (!this.props.menu.menuItems) this.props.initMenu();
+        // else this.initMenu();
 
         this.props.history.listen((location, action) => {
             // hide menus in mobile
