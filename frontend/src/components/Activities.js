@@ -23,7 +23,7 @@ class Activities extends React.Component {
 						<li key={activity.id}>
 							{activity.date} - {activity.kind} - {activity.amount}{" "}
 							<button onClick={() => this.visit(activity.id)}>
-								Visit {this.state[activity.id] ? this.state[activity.id] : 0}
+								Likes {this.state[activity.id] ? this.state[activity.id] : 0}
 							</button>
 							<button onClick={() => this.handleDelete(activity)}>
 								Delete

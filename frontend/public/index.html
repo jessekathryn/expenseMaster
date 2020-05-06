@@ -43,10 +43,10 @@
         <div class="navbar navbar-expand flex-column flex-md-row navbar-custom">
             <div class="container-fluid">
                 <!-- LOGO -->
-                <a href="/" class="navbar-brand mr-0 mr-md-2 logo">
+                <a href="index.html" class="navbar-brand mr-0 mr-md-2 logo">
                     <span class="logo-lg">
                         <img src="assets/images/logo.png" alt="" height="24" />
-                        <span class="d-inline h5 ml-1 text-logo">expenseMaster</span>
+                        <span class="d-inline h5 ml-1 text-logo">Shreyu</span>
                     </span>
                     <span class="logo-sm">
                         <img src="assets/images/logo.png" alt="" height="24">
@@ -59,6 +59,190 @@
                             <i data-feather="menu" class="menu-icon"></i>
                             <i data-feather="x" class="close-icon"></i>
                         </button>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+                    <li class="d-none d-sm-block">
+                        <div class="app-search">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span data-feather="search"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                    <li class="dropdown d-none d-lg-block" data-toggle="tooltip" data-placement="left" title="Change language">
+                        <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i data-feather="globe"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-2" height="12"> <span
+                                    class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-2" height="12"> <span
+                                    class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-2" height="12"> <span
+                                    class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-2" height="12"> <span
+                                    class="align-middle">Russian</span>
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left"
+                        title="8 new unread notifications">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                            aria-expanded="false">
+                            <i data-feather="bell"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                            <!-- item-->
+                            <div class="dropdown-item noti-title border-bottom">
+                                <h5 class="m-0 font-size-16">
+                                    <span class="float-right">
+                                        <a href="" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+
+                            <div class="slimscroll noti-scroll">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-primary"><i class="uil uil-user-plus"></i></div>
+                                    <p class="notify-details">New user registered.<small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-1.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Karen Robinson</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Wow ! this admin looks good and awesome design</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Cristina Pride</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Hi, How are you? What about our next meeting</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom active">
+                                    <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                                    <p class="notify-details">Jaclyn Brunswick commented on Dashboard<small class="text-muted">1
+                                            min
+                                            ago</small></p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                                    <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4 days
+                                            ago</small></p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary">
+                                        <i class="uil uil-heart"></i>
+                                    </div>
+                                    <p class="notify-details">Carlos Crouch liked
+                                        <b>Admin</b>
+                                        <small class="text-muted">13 days ago</small>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);"
+                                class="dropdown-item text-center text-primary notify-item notify-all border-top">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="Settings">
+                        <a href="javascript:void(0);" class="nav-link right-bar-toggle">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+
+                    <li class="dropdown notification-list align-self-center profile-dropdown">
+                        <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <div class="media user-profile ">
+                                <img src="assets/images/users/avatar-7.jpg" alt="user-image" class="rounded-circle align-self-center" />
+                                <div class="media-body text-left">
+                                    <h6 class="pro-user-name ml-2 my-0">
+                                        <span>Shreyu N</span>
+                                        <span class="pro-user-desc text-muted d-block mt-1">Administrator </span>
+                                    </h6>
+                                </div>
+                                <span data-feather="chevron-down" class="ml-2 align-self-center"></span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu profile-dropdown-items dropdown-menu-right">
+                            <a href="pages-profile.html" class="dropdown-item notify-item">
+                                <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                                <span>Support</span>
+                            </a>
+
+                            <a href="pages-lock-screen.html" class="dropdown-item notify-item">
+                                <i data-feather="lock" class="icon-dual icon-xs mr-2"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="log-out" class="icon-dual icon-xs mr-2"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -151,7 +335,80 @@
                             <h4 class="mb-1 mt-0">Dashboard</h4>
                         </div>
                     </div>
-     
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="media p-3">
+                                        <div class="media-body">
+                                            <span class="text-muted text-uppercase font-size-12 font-weight-bold">Today
+                                                Revenue</span>
+                                            <h2 class="mb-0">$2189</h2>
+                                        </div>
+                                        <div class="align-self-center" style="position: relative;">
+                                            <div id="today-revenue-chart" class="apex-charts" style="min-height: 45px;"><div id="apexcharts6f4vf88b" class="apexcharts-canvas apexcharts6f4vf88b light" style="width: 90px; height: 45px;"><svg id="SvgjsSvg1001" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1003" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1002"><clipPath id="gridRectMask6f4vf88b"><rect id="SvgjsRect1008" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMask6f4vf88b"><rect id="SvgjsRect1009" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><linearGradient id="SvgjsLinearGradient1015" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1016" stop-opacity="0.45" stop-color="rgba(114,124,245,0.45)" offset="0.45"></stop><stop id="SvgjsStop1017" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop1018" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1007" x1="53.5" y1="0" x2="53.5" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="53.5" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1021" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1022" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1025" class="apexcharts-grid"><line id="SvgjsLine1027" x1="0" y1="45" x2="90" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1026" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1011" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1012" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1019" d="M0 45L0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 45M90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="url(#SvgjsLinearGradient1015)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask6f4vf88b)" pathTo="M 0 45L 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C 90 20.700000000000003 90 20.700000000000003 90 45M 90 20.700000000000003z" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><path id="SvgjsPath1020" d="M0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="none" fill-opacity="1" stroke="#727cf5" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask6f4vf88b)" pathTo="M 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><g id="SvgjsG1013" class="apexcharts-series-markers-wrap"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1033" r="0" cx="54" cy="25.2" class="apexcharts-marker wi7tdkjmr no-pointer-events" stroke="#ffffff" fill="#727cf5" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g><g id="SvgjsG1014" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1028" x1="0" y1="0" x2="90" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1029" x1="0" y1="0" x2="90" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1030" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1031" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1032" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1006" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1023" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1024" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip dark" style="left: 5.21875px; top: 12px;"><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(114, 124, 245); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value">44</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                                            <span class="text-success font-weight-bold font-size-13"><i class="uil uil-arrow-up"></i> 10.21%</span>
+                                        <div class="resize-triggers"><div class="expand-trigger"><div style="width: 91px; height: 77px;"></div></div><div class="contract-trigger"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="media p-3">
+                                        <div class="media-body">
+                                            <span class="text-muted text-uppercase font-size-12 font-weight-bold">Product
+                                                Sold</span>
+                                            <h2 class="mb-0">1065</h2>
+                                        </div>
+                                        <div class="align-self-center" style="position: relative;">
+                                            <div id="today-product-sold-chart" class="apex-charts" style="min-height: 45px;"><div id="apexchartscmytrwnal" class="apexcharts-canvas apexchartscmytrwnal light" style="width: 90px; height: 45px;"><svg id="SvgjsSvg1034" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1036" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1035"><clipPath id="gridRectMaskcmytrwnal"><rect id="SvgjsRect1041" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMaskcmytrwnal"><rect id="SvgjsRect1042" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><linearGradient id="SvgjsLinearGradient1048" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1049" stop-opacity="0.45" stop-color="rgba(247,126,83,0.45)" offset="0.45"></stop><stop id="SvgjsStop1050" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop1051" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1040" x1="35.5" y1="0" x2="35.5" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="35.5" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1054" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1055" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1058" class="apexcharts-grid"><line id="SvgjsLine1060" x1="0" y1="45" x2="90" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1059" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1044" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1045" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1052" d="M0 45L0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 45M90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="url(#SvgjsLinearGradient1048)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskcmytrwnal)" pathTo="M 0 45L 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C 90 20.700000000000003 90 20.700000000000003 90 45M 90 20.700000000000003z" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><path id="SvgjsPath1053" d="M0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="none" fill-opacity="1" stroke="#f77e53" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskcmytrwnal)" pathTo="M 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><g id="SvgjsG1046" class="apexcharts-series-markers-wrap"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1066" r="0" cx="36" cy="16.650000000000002" class="apexcharts-marker ws6jn03ctk no-pointer-events" stroke="#ffffff" fill="#f77e53" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g><g id="SvgjsG1047" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1061" x1="0" y1="0" x2="90" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1062" x1="0" y1="0" x2="90" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1063" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1064" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1065" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1039" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1056" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1057" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip dark" style="left: -12.7812px; top: 12px;"><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(247, 126, 83); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value">63</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                                            <span class="text-danger font-weight-bold font-size-13"><i class="uil uil-arrow-down"></i> 5.05%</span>
+                                        <div class="resize-triggers"><div class="expand-trigger"><div style="width: 91px; height: 77px;"></div></div><div class="contract-trigger"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="media p-3">
+                                        <div class="media-body">
+                                            <span class="text-muted text-uppercase font-size-12 font-weight-bold">New
+                                                Customers</span>
+                                            <h2 class="mb-0">11</h2>
+                                        </div>
+                                        <div class="align-self-center" style="position: relative;">
+                                            <div id="today-new-customer-chart" class="apex-charts" style="min-height: 45px;"><div id="apexcharts07298esn" class="apexcharts-canvas apexcharts07298esn light" style="width: 90px; height: 45px;"><svg id="SvgjsSvg1067" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1069" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1068"><clipPath id="gridRectMask07298esn"><rect id="SvgjsRect1074" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMask07298esn"><rect id="SvgjsRect1075" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><linearGradient id="SvgjsLinearGradient1081" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1082" stop-opacity="0.45" stop-color="rgba(67,211,158,0.45)" offset="0.45"></stop><stop id="SvgjsStop1083" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop1084" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1073" x1="17.5" y1="0" x2="17.5" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="17.5" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1087" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1088" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1091" class="apexcharts-grid"><line id="SvgjsLine1093" x1="0" y1="45" x2="90" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1092" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1077" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1078" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1085" d="M0 45L0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 45M90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="url(#SvgjsLinearGradient1081)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask07298esn)" pathTo="M 0 45L 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C 90 20.700000000000003 90 20.700000000000003 90 45M 90 20.700000000000003z" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><path id="SvgjsPath1086" d="M0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="none" fill-opacity="1" stroke="#43d39e" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask07298esn)" pathTo="M 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><g id="SvgjsG1079" class="apexcharts-series-markers-wrap"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1099" r="0" cx="18" cy="26.55" class="apexcharts-marker w4gtthuss no-pointer-events" stroke="#ffffff" fill="#43d39e" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g><g id="SvgjsG1080" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1094" x1="0" y1="0" x2="90" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1095" x1="0" y1="0" x2="90" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1096" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1097" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1098" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1072" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1089" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1090" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip dark" style="left: 29px; top: 12px;"><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(67, 211, 158); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                                            <span class="text-success font-weight-bold font-size-13"><i class="uil uil-arrow-up"></i> 25.16%</span>
+                                        <div class="resize-triggers"><div class="expand-trigger"><div style="width: 91px; height: 77px;"></div></div><div class="contract-trigger"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="media p-3">
+                                        <div class="media-body">
+                                            <span class="text-muted text-uppercase font-size-12 font-weight-bold">New
+                                                Visitors</span>
+                                            <h2 class="mb-0">750</h2>
+                                        </div>
+                                        <div class="align-self-center" style="position: relative;">
+                                            <div id="today-new-visitors-chart" class="apex-charts" style="min-height: 45px;"><div id="apexchartshku5rjuc" class="apexcharts-canvas apexchartshku5rjuc light" style="width: 90px; height: 45px;"><svg id="SvgjsSvg1100" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1102" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1101"><clipPath id="gridRectMaskhku5rjuc"><rect id="SvgjsRect1107" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMaskhku5rjuc"><rect id="SvgjsRect1108" width="92" height="47" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><linearGradient id="SvgjsLinearGradient1114" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1115" stop-opacity="0.45" stop-color="rgba(255,190,11,0.45)" offset="0.45"></stop><stop id="SvgjsStop1116" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop1117" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1106" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1120" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1121" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1124" class="apexcharts-grid"><line id="SvgjsLine1126" x1="0" y1="45" x2="90" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1125" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1110" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1111" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1118" d="M0 45L0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 45M90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="url(#SvgjsLinearGradient1114)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskhku5rjuc)" pathTo="M 0 45L 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C 90 20.700000000000003 90 20.700000000000003 90 45M 90 20.700000000000003z" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><path id="SvgjsPath1119" d="M0 33.75C3.1500000000000004 33.75 5.85 15.3 9 15.3C12.15 15.3 14.85 26.55 18 26.55C21.15 26.55 23.85 6.75 27 6.75C30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C39.15 16.650000000000002 41.85 33.75 45 33.75C48.15 33.75 50.85 25.2 54 25.2C57.15 25.2 59.85 39.6 63 39.6C66.15 39.6 68.85 28.8 72 28.8C75.15 28.8 77.85 40.95 81 40.95C84.15 40.95 86.85 20.700000000000003 90 20.700000000000003C90 20.700000000000003 90 20.700000000000003 90 20.700000000000003 " fill="none" fill-opacity="1" stroke="#ffbe0b" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskhku5rjuc)" pathTo="M 0 33.75C 3.15 33.75 5.85 15.3 9 15.3C 12.15 15.3 14.85 26.55 18 26.55C 21.15 26.55 23.85 6.75 27 6.75C 30.15 6.75 32.85 16.650000000000002 36 16.650000000000002C 39.15 16.650000000000002 41.85 33.75 45 33.75C 48.15 33.75 50.85 25.2 54 25.2C 57.15 25.2 59.85 39.6 63 39.6C 66.15 39.6 68.85 28.8 72 28.8C 75.15 28.8 77.85 40.95 81 40.95C 84.15 40.95 86.85 20.700000000000003 90 20.700000000000003" pathFrom="M -1 45L -1 45L 9 45L 18 45L 27 45L 36 45L 45 45L 54 45L 63 45L 72 45L 81 45L 90 45"></path><g id="SvgjsG1112" class="apexcharts-series-markers-wrap"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1132" r="0" cx="0" cy="0" class="apexcharts-marker w71mr4hl3 no-pointer-events" stroke="#ffffff" fill="#ffbe0b" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g><g id="SvgjsG1113" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1127" x1="0" y1="0" x2="90" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1128" x1="0" y1="0" x2="90" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1129" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1130" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1131" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1105" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1122" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1123" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip dark"><div class="apexcharts-tooltip-series-group"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 190, 11);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                                            <span class="text-danger font-weight-bold font-size-13"><i class="uil uil-arrow-down"></i> 5.05%</span>
+                                        <div class="resize-triggers"><div class="expand-trigger"><div style="width: 91px; height: 77px;"></div></div><div class="contract-trigger"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-xl-10 col-lg-9">
                             <div>
@@ -174,7 +431,7 @@
                                     <div class="col">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="mt-0 header-title" id="structure">$ Profile</h5>
+                                                <h5 class="mt-0 header-title" id="structure"></h5>
                                         <!-- ============================================================== -->
                                         <!-- Root Div Here-->
                                         <!-- ============================================================== -->
@@ -185,30 +442,778 @@
                                     </div>
                                 </div>
 
-                                <!-- prerequisites -->
                                 <div class="row">
-                                    <div class="col">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="mt-0 header-title" id="prerequisites">$ Activity</h5>
-                                                
+                                    <div class="col-xl-8">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <!-- cta -->
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <a href="#" class="btn btn-primary"><i class="uil uil-plus mr-1"></i>Add New</a>
+                                                            </div>
+                                                            <div class="col-sm-9">
+                                                                <div class="float-sm-right mt-3 mt-sm-0">
+                                                                    
+                                                                    <div class="task-search d-inline-block mb-3 mb-sm-0 mr-sm-3">
+                                                                        <form>
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control search-input" placeholder="Search...">
+                                                                                <span class="uil uil-search icon-search"></span>
+                                                                                <div class="input-group-append">
+                                                                                    <button class="btn btn-soft-primary" type="button">
+                                                                                        <i class="uil uil-file-search-alt"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <i class="uil uil-sort-amount-down"></i>
+                                                                        </button>
+                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                            <a class="dropdown-item" href="#">Due Date</a>
+                                                                            <a class="dropdown-item" href="#">Added Date</a>
+                                                                            <a class="dropdown-item" href="#">Assignee</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            
+                                                        <div class="row mt-4">
+                                                            <div class="col">
+                                                                <a class="text-dark" data-toggle="collapse" href="#todayTasks" aria-expanded="false" aria-controls="todayTasks">
+                                                                    <h5 class="mb-0"><i class="uil uil-angle-down font-size-18"></i>Today <span class="text-muted font-size-14">(10)</span></h5>
+                                                                </a>
+            
+                                                                <div class="collapse show" id="todayTasks">
+                                                                    <div class="card mb-0 shadow-none">
+                                                                        <div class="card-body">
+                                                                            <!-- task -->
+                                                                            <div class="row justify-content-sm-between border-bottom">
+                                                                                <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="task1">
+                                                                                        <label class="custom-control-label" for="task1">
+                                                                                            Draft the new contract document for
+                                                                                            sales team
+                                                                                        </label>
+                                                                                    </div> <!-- end checkbox -->
+                                                                                </div> <!-- end col -->
+                                                                                <div class="col-lg-6">
+                                                                                    <div class="d-sm-flex justify-content-between">
+                                                                                        <div>
+                                                                                            <img src="assets/images/users/avatar-9.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Arya S">
+                                                                                        </div>
+                                                                                        <div class="mt-3 mt-sm-0">
+                                                                                            <ul class="list-inline font-13 text-sm-right">
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                    Today 10am
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                    3/7
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-2">
+                                                                                                    <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                    21
+                                                                                                </li>
+                                                                                                <li class="list-inline-item">
+                                                                                                    <span class="badge badge-soft-danger p-1">High</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div> <!-- end .d-flex-->
+                                                                                </div> <!-- end col -->
+                                                                            </div>
+                                                                            <!-- end task -->
+            
+                                                                            <!-- task -->
+                                                                            <div class="row justify-content-sm-between mt-2 border-bottom pt-2">
+                                                                                <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="task2">
+                                                                                        <label class="custom-control-label" for="task2">
+                                                                                            iOS App home page
+                                                                                        </label>
+                                                                                    </div> <!-- end checkbox -->
+                                                                                </div> <!-- end col -->
+                                                                                <div class="col-lg-6">
+                                                                                    <div class="d-sm-flex justify-content-between">
+                                                                                        <div>
+                                                                                            <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to James B">
+                                                                                        </div>
+                                                                                        <div class="mt-3 mt-sm-0">
+                                                                                            <ul class="list-inline font-13 text-sm-right">
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                    Today 4pm
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                    2/7
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-2">
+                                                                                                    <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                    48
+                                                                                                </li>
+                                                                                                <li class="list-inline-item">
+                                                                                                    <span class="badge badge-soft-danger p-1">High</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div> <!-- end .d-flex-->
+                                                                                </div> <!-- end col -->
+                                                                            </div>
+                                                                            <!-- end task -->
+            
+                                                                            <!-- task -->
+                                                                            <div class="row justify-content-sm-between mt-2 pt-2">
+                                                                                <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="task3">
+                                                                                        <label class="custom-control-label" for="task3">
+                                                                                            Write a release note
+                                                                                        </label>
+                                                                                    </div> <!-- end checkbox -->
+                                                                                </div> <!-- end col -->
+                                                                                <div class="col-lg-6">
+                                                                                    <div class="d-sm-flex justify-content-between">
+                                                                                        <div>
+                                                                                            <img src="assets/images/users/avatar-4.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Kevin C">
+                                                                                        </div>
+                                                                                        <div class="mt-3 mt-sm-0">
+                                                                                            <ul class="list-inline font-13 text-sm-right mb-0">
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                    Today 6pm
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-1">
+                                                                                                    <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                    18/21
+                                                                                                </li>
+                                                                                                <li class="list-inline-item pr-2">
+                                                                                                    <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                    73
+                                                                                                </li>
+                                                                                                <li class="list-inline-item">
+                                                                                                    <span class="badge badge-soft-info p-1">Medium</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div> <!-- end .d-flex-->
+                                                                                </div> <!-- end col -->
+                                                                            </div>
+                                                                            <!-- end task -->
+                                                                        </div> <!-- end card-body-->
+                                                                    </div> <!-- end card -->
+                                                                </div> <!-- end .collapse-->
+            
+                                                                <!-- upcoming tasks -->
+                                                                <div class="mt-4">
+                                                                    <a class="text-dark" data-toggle="collapse" href="#upcomingTasks" aria-expanded="false" aria-controls="upcomingTasks">
+                                                                        <h5 class="mb-0">
+                                                                            <i class="uil uil-angle-down font-18"></i>Upcoming <span class="text-muted font-size-14">(5)</span>
+                                                                        </h5>
+                                                                    </a>
+            
+                                                                    <div class="collapse show" id="upcomingTasks">
+                                                                        <div class="card mb-0 shadow-none">
+                                                                            <div class="card-body">
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between border-bottom">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task4">
+                                                                                            <label class="custom-control-label" for="task4">
+                                                                                                Invite user to a project
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to James B">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        Tomorrow
+                                                                                                        7am
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        1/12
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        36
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-danger p-1">High</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 pt-2 border-bottom">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task5">
+                                                                                            <label class="custom-control-label" for="task5">
+                                                                                                Enable analytics tracking
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to James B">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        27 Aug
+                                                                                                        10am
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        13/72
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        211
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-success p-1">Low</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 pt-2">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task6">
+                                                                                            <label class="custom-control-label" for="task6">
+                                                                                                Code HTML email template
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-7.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Edward S">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right mb-0">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        No Due
+                                                                                                        Date
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        0/7
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        0
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-info p-1">Medium</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+                                                                            </div> <!-- end card-body-->
+                                                                        </div> <!-- end card -->
+                                                                    </div> <!-- end collapse-->
+                                                                </div>
+                                                                <!-- end upcoming tasks -->
+            
+                                                                <!-- start other tasks -->
+                                                                <div class="mt-4 mb-4">
+                                                                    <a class="text-dark" data-toggle="collapse" href="#otherTasks" aria-expanded="false" aria-controls="otherTasks">
+                                                                        <h5>
+                                                                            <i class="uil uil-angle-down font-18"></i>Other <span class="text-muted font-size-14">(5)</span>
+                                                                        </h5>
+                                                                    </a>
+            
+                                                                    <div class="collapse show" id="otherTasks">
+                                                                        <div class="card mb-0 shadow-none">
+                                                                            <div class="card-body">
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between border-bottom">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task7">
+                                                                                            <label class="custom-control-label" for="task7">
+                                                                                                Coordinate with business development
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-9.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Arya S">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        Today
+                                                                                                        10am
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        5/14
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        71
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-info p-1">Medium</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 border-bottom pt-2">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task8">
+                                                                                            <label class="custom-control-label" for="task8">
+                                                                                                Kanban board design
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to James B">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        No Due
+                                                                                                        Date
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        0/8
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        0
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-info p-1">Medium</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 border-bottom pt-2">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task11">
+                                                                                            <label class="custom-control-label" for="task11">
+                                                                                                Draft the new contract document for
+                                                                                                sales team
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-9.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Arya S">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        Today 10am
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        3/7
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        21
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-danger p-1">High</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 border-bottom pt-2">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task12">
+                                                                                            <label class="custom-control-label" for="task12">
+                                                                                                iOS App home page
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to James B">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right">
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        Today 4pm
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        2/7
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        48
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-danger p-1">High</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+            
+                                                                                <!-- task -->
+                                                                                <div class="row justify-content-sm-between mt-2 pt-2">
+                                                                                    <div class="col-lg-6 mb-2 mb-lg-0">
+                                                                                        <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="task13">
+                                                                                            <label class="custom-control-label" for="task13">
+                                                                                                Write a release note
+                                                                                            </label>
+                                                                                        </div> <!-- end checkbox -->
+                                                                                    </div> <!-- end col -->
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="d-sm-flex justify-content-between">
+                                                                                            <div>
+                                                                                                <img src="assets/images/users/avatar-4.jpg" alt="image" class="avatar-xs rounded-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Assigned to Kevin C">
+                                                                                            </div>
+                                                                                            <div class="mt-3 mt-sm-0">
+                                                                                                <ul class="list-inline font-13 text-sm-right mb-0">
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <i class="uil uil-schedule font-16 mr-1"></i>
+                                                                                                        Today 6pm
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-1">&gt;
+                                                                                                        <i class="uil uil-align-alt font-16 mr-1"></i>
+                                                                                                        18/21
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item pr-2">
+                                                                                                        <i class="uil uil-comment-message font-16 mr-1"></i>
+                                                                                                        73
+                                                                                                    </li>
+                                                                                                    <li class="list-inline-item">
+                                                                                                        <span class="badge badge-soft-info p-1">Medium</span>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div> <!-- end .d-flex-->
+                                                                                    </div> <!-- end col -->
+                                                                                </div>
+                                                                                <!-- end task -->
+                                                                            </div> <!-- end card-body-->
+                                                                        </div> <!-- end card -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            
+                                                        <div class="row mb-3 mt-5">
+                                                            <div class="col-12">
+                                                                <div class="text-center">
+                                                                    <a href="javascript:void(0);" class="btn btn-white mb-3">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader icon-dual icon-xs mr-2"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+                                                                        Load more
+                                                                    </a>
+                                                                </div>
+                                                            </div> <!-- end col-->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- setup -->
-                                <div class="row">
-                                    <div class="col">
+            
+                                    <!-- task details -->
+                                    <div class="col-xl-4">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="mt-0 header-title" id="setup">$ Debt</h5>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                                <div class="row pb-3 border-bottom">
+                                                    <div class="col">
+                                                        <div class="dropdown float-right">
+                                                            <a href="#" class="dropdown-toggle arrow-none text-muted" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="uil uil-ellipsis-h"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <!-- item-->
+                                                                <a href="javascript:void(0);" class="dropdown-item">
+                                                                    <i class="uil uil-file-upload mr-1"></i>Attachment
+                                                                </a>
+                                                                <!-- item-->
+                                                                <a href="javascript:void(0);" class="dropdown-item">
+                                                                    <i class="uil uil-edit mr-1"></i>Edit
+                                                                </a>
+                                                                <!-- item-->
+                                                                <a href="javascript:void(0);" class="dropdown-item">
+                                                                    <i class="uil uil-file-copy-alt mr-1"></i>Mark as Duplicate
+                                                                </a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <!-- item-->
+                                                                <a href="javascript:void(0);" class="dropdown-item text-danger">
+                                                                    <i class="uil uil-trash-alt mr-1"></i>Delete
+                                                                </a>
+                                                            </div> <!-- end dropdown menu-->
+                                                        </div> <!-- end dropdown-->
+            
+                                                        <div class="custom-control custom-checkbox float-left">
+                                                            <input type="checkbox" class="custom-control-input" id="completedCheck">
+                                                            <label class="custom-control-label" for="completedCheck">
+                                                                Mark as completed
+                                                            </label>
+                                                        </div> <!-- end custom-checkbox-->
+                                                    </div>
+                                                </div>
+            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 class="mt-3">Draft the new contract document for sales team</h4>
+            
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <!-- assignee -->
+                                                                <p class="mt-2 mb-1 text-muted">Assigned To</p>
+                                                                <div class="media">
+                                                                    <img src="assets/images/users/avatar-9.jpg" alt="Arya S" class="rounded-circle mr-2" height="24">
+                                                                    <div class="media-body">
+                                                                        <h5 class="mt-1 font-size-14">
+                                                                            Arya Stark
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end assignee -->
+                                                            </div> <!-- end col -->
+            
+                                                            <div class="col-6">
+                                                                <!-- start due date -->
+                                                                <p class="mt-2 mb-1 text-muted">Due Date</p>
+                                                                <div class="media">
+                                                                    <i class="uil uil-schedule font-18 text-success mr-1"></i>
+                                                                    <div class="media-body">
+                                                                        <h5 class="mt-1 font-size-14">
+                                                                            Today 10am
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end due date -->
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+            
+                                                        <!-- task description -->
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div id="taskDesk" style="display: none;">
+                                                                    <p>This is a task description with markup support</p>
+                                                                    <ul>
+                                                                        <li>Select a text to reveal the toolbar.</li>
+                                                                        <li>Edit rich document on-the-fly, so elastic!</li>
+                                                                    </ul>
+                                                                    <p>End of air-mode area</p>
+                                                                </div><div class="note-editor"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><div class="note-editable" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true">
+                                                                    <p>This is a task description with markup support</p>
+                                                                    <ul>
+                                                                        <li>Select a text to reveal the toolbar.</li>
+                                                                        <li>Edit rich document on-the-fly, so elastic!</li>
+                                                                    </ul>
+                                                                    <p>End of air-mode area</p>
+                                                                </div><output class="note-status-output" aria-live="polite"></output></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Link"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <h4 class="modal-title">Insert Link</h4>      <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button>    </div>    <div class="modal-body"><div class="form-group note-form-group"><label class="note-form-label">Text to display</label><input class="note-link-text form-control note-form-control note-input" type="text"></div><div class="form-group note-form-group"><label class="note-form-label">To what URL should this link go?</label><input class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="form-check sn-checkbox-open-in-new-window"><label class="form-check-label"> <input role="checkbox" type="checkbox" class="form-check-input" checked="" aria-label="Open in new window" aria-checked="true"> Open in new window</label></div></div>    <div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn" value="Insert Link" disabled=""></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Image"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <h4 class="modal-title">Insert Image</h4>      <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button>    </div>    <div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label class="note-form-label">Select from files</label><input class="note-image-input form-control-file note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label class="note-form-label">Image URL</label><input class="note-image-url form-control note-form-control note-input  col-md-12" type="text"></div></div>    <div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn" value="Insert Image" disabled=""></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Video"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <h4 class="modal-title">Insert Video</h4>      <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label class="note-form-label">Video URL <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control note-form-control note-input" type="text"></div></div>    <div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" value="Insert Video" disabled=""></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Help"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <h4 class="modal-title">Help</h4>      <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+Z</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.12</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div></div>
+                                                            </div> <!-- end col -->
+                                                        </div>
+                                                        <!-- end task description -->
+            
+                                                        <!-- start sub tasks/checklists -->
+                                                        <h5 class="mt-4 mb-2 font-size-16">Checklists/Sub-tasks</h5>
+                                                        <div class="custom-control custom-checkbox mt-1">
+                                                            <input type="checkbox" class="custom-control-input" id="checklist1">
+                                                            <label class="custom-control-label strikethrough" for="checklist1">
+                                                                Find out the old contract documents
+                                                            </label>
+                                                        </div>
+            
+                                                        <div class="custom-control custom-checkbox mt-1">
+                                                            <input type="checkbox" class="custom-control-input" id="checklist2">
+                                                            <label class="custom-control-label strikethrough" for="checklist2">
+                                                                Organize meeting sales associates to understand need in detail
+                                                            </label>
+                                                        </div>
+            
+                                                        <div class="custom-control custom-checkbox mt-1">
+                                                            <input type="checkbox" class="custom-control-input" id="checklist3">
+                                                            <label class="custom-control-label strikethrough" for="checklist3">
+                                                                Make sure to cover every small details
+                                                            </label>
+                                                        </div>
+                                                        <!-- end sub tasks/checklists -->
+            
+                                                        <!-- start attachments -->
+                                                        <h5 class="mt-4 mb-2 font-size-16">Attachments</h5>
+                                                        <div class="card mb-2 shadow-none border">
+                                                            <div class="p-1 px-2">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <img src="assets/images/projects/project-1.jpg" class="avatar-sm rounded" alt="file-image">
+                                                                    </div>
+                                                                    <div class="col pl-0">
+                                                                        <a href="javascript:void(0);" class="text-muted font-weight-bold">sales-assets.zip</a>
+                                                                        <p class="mb-0">2.3 MB</p>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <!-- Button -->
+                                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="" class="btn btn-link text-muted btn-lg p-0" data-original-title="Download">
+                                                                            <i class="uil uil-cloud-download font-size-14"></i>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="" class="btn btn-link text-danger btn-lg p-0" data-original-title="Delete">
+                                                                            <i class="uil uil-multiply font-size-14"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card mb-2 shadow-none border">
+                                                            <div class="p-1 px-2">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <img src="assets/images/projects/project-2.jpg" class="avatar-sm rounded" alt="file-image">
+                                                                    </div>
+                                                                    <div class="col pl-0">
+                                                                        <a href="javascript:void(0);" class="text-muted font-weight-bold">new-contarcts.docx</a>
+                                                                        <p class="mb-0">1.25 MB</p>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <!-- Button -->
+                                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="" class="btn btn-link text-muted btn-lg p-0" data-original-title="Download">
+                                                                            <i class="uil uil-cloud-download font-size-14"></i>
+                                                                        </a>
+                                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="" class="btn btn-link text-danger btn-lg p-0" data-original-title="Delete">
+                                                                            <i class="uil uil-multiply font-size-14"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end attachments -->
+            
+                                                        <!-- comments -->
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <h5 class="mb-2 font-size-16">Comments</h5>
+            
+                                                                <div class="media mt-3 p-1">
+                                                                    <img src="assets/images/users/avatar-9.jpg" class="mr-2 rounded-circle" height="36" alt="Arya Stark">
+                                                                    <div class="media-body">
+                                                                        <h5 class="mt-0 mb-0 font-size-14">
+                                                                            <span class="float-right text-muted font-size-12">4:30am</span>
+                                                                            Arya Stark
+                                                                        </h5>
+                                                                        <p class="mt-1 mb-0 text-muted">
+                                                                            Should I review the last 3 years legal documents as
+                                                                            well?
+                                                                        </p>
+                                                                    </div>
+                                                                </div> <!-- end comment -->
+            
+                                                                <hr>
+            
+                                                                <div class="media mt-2 p-1">
+                                                                    <img src="assets/images/users/avatar-5.jpg" class="mr-2 rounded-circle" height="36" alt="Dominc B">
+                                                                    <div class="media-body">
+                                                                        <h5 class="mt-0 mb-0 font-size-14">
+                                                                            <span class="float-right text-muted font-size-12">3:30am</span>
+                                                                            Gary Somya
+                                                                        </h5>
+                                                                        <p class="mt-1 mb-0 text-muted">
+                                                                            @Arya FYI..I have created some general guidelines last
+                                                                            year.
+                                                                        </p>
+                                                                    </div>
+                                                                </div> <!-- end comment-->
+            
+                                                                <hr>
+            
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+            
+                                                        <div class="row mt-2">
+                                                            <div class="col">
+                                                                <div class="border rounded">
+                                                                    <form action="#" class="comment-area-box">
+                                                                        <textarea rows="3" class="form-control border-0 resize-none" placeholder="Your comment..."></textarea>
+                                                                        <div class="p-2 bg-light">
+                                                                            <div class="float-right">
+                                                                                <button type="submit" class="btn btn-sm btn-success"><i class="uil uil-message mr-1"></i>Submit</button>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="#" class="btn btn-sm px-1 btn-light"><i class="uil uil-cloud-upload"></i></a>
+                                                                                <a href="#" class="btn btn-sm px-1 btn-light"><i class="uil uil-at"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div> <!-- end .border-->
+                                                            </div> <!-- end col-->
+                                                        </div> <!-- end row-->
+                                                        <!-- end comments -->
+                                                    </div> <!-- end col -->
+                                                </div> <!-- end row-->
+                                            </div> <!-- end card-body -->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col -->
                                 </div>
-
 
                                 <!-- routing -->
                                 <div class="row">

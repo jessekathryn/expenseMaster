@@ -26,8 +26,8 @@ class ProfileInput extends React.Component {
 	render() {
 		return (
 			<div>
+				<h4>$ New Profile</h4>
 				<form onSubmit={this.handleSubmit}>
-					<label>Profile Name: </label>
 					<input
 						type="text"
 						placeholder="Name"
@@ -36,16 +36,15 @@ class ProfileInput extends React.Component {
 						onChange={this.handleChange}
 					/>
 					<br />
-					<label>Balance: </label>
 					<input
 						type="text"
-						placeholder="Balance"
+						placeholder="Starting Balance"
 						value={this.state.balance}
 						name="balance"
 						onChange={this.handleChange}
 					/>
 					<br />
-					<input type="submit" />
+					<input type="submit" name="Add" />
 				</form>
 			</div>
 		);

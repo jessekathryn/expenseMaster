@@ -9,13 +9,11 @@ const Profile = (props) => {
 	console.log(profile);
 	return (
 		<div>
-			<h2>
-	
-			{profile ? profile.name : null} - {profile ? profile.balance : null}
-			</h2>
+			<h4>$ Activity </h4> 
+			<h6>{profile ? profile.name : null}</h6>
 			<ActivitiesContainer profile={profile} />
 			<br />
-			<h4>Edit</h4>
+			<h7>$ Edit Profile</h7>
 			<ProfileEdit profile={profile} />
 		</div>
 	);

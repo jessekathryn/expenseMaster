@@ -16,6 +16,7 @@ class ProfilesContainer extends React.Component {
 		return (
 			<div>
 				<Navbar />
+				
 				<Switch>
 					<Route path="/profiles/new" component={ProfileInput} />
 					<Route

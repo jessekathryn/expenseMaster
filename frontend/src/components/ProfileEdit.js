@@ -28,25 +28,21 @@ class ProfileEdit extends React.Component {
 		return (
 			<div>
 				<form onSubmit={this.handleSubmit}>
-					<label>Profile Name: </label>
-					<input
-						type="text"
+					<input type="text"
+						class="form-control mb-2" 
+						id="inlineFormInput"
 						placeholder="Name"
 						value={this.state.name}
 						name="name"
 						onChange={this.handleChange}
-					/>
-					<br />
-					<label>Balance: </label>
-					<input
+					/><input class="btn btn-success" type="submit" value="Edit" ></input>
+					{/* <input
 						type="text"
-						placeholder="Balance"
+						placeholder="Starting Balance"
 						value={this.state.balance}
 						name="balance"
 						onChange={this.handleChange}
-					/>
-					<br />
-					<input type="submit" />
+					/> */}
 				</form>
 			</div>
 		);
