@@ -13,7 +13,7 @@ const Profile = (props) => {
 			<h6>{profile ? profile.name : null}</h6>
 			<ActivitiesContainer profile={profile} />
 			<br />
-			<h7>$ Edit Profile</h7>
+			<h6>$ Edit Profile</h6>
 			<ProfileEdit profile={profile} />
 		</div>
 	);

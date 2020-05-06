@@ -29,13 +29,13 @@ class ProfileEdit extends React.Component {
 			<div>
 				<form onSubmit={this.handleSubmit}>
 					<input type="text"
-						class="form-control mb-2" 
+						className="form-control mb-2" 
 						id="inlineFormInput"
 						placeholder="Name"
 						value={this.state.name}
 						name="name"
 						onChange={this.handleChange}
-					/><input class="btn btn-success" type="submit" value="Edit" ></input>
+					/><input className="btn btn-success" type="submit" value="Edit" ></input>
 					{/* <input
 						type="text"
 						placeholder="Starting Balance"
