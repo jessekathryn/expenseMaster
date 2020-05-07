@@ -25,25 +25,22 @@ class ActivityInput extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<form onSubmit={this.handleSubmit}>
-					<label>Type:</label>
-					<select
+			  <div class="media p-6">                
+				<form onSubmit={this.handleSubmit}>	
+					<select className="form-control mb-1"
 						name="kind"
 						value={this.state.kind}
-						onChange={this.handleChange}
-					>
-						<option>deposit</option>
-						<option>debit</option>
+						onChange={this.handleChange}>
+						<option>Deposit</option>
+						<option>Debit</option>
 					</select>
-					<label>Amount:</label>
-					<input
-						type="text"
+					<input type="text"
+						className="form-control mb-1" 
 						name="amount"
+						placeholder="$ 00.00"
 						value={this.state.amount}
-						onChange={this.handleChange}
-					/>
-					<input type="submit" />
+						onChange={this.handleChange}/>
+					<input className="btn btn-success" type="submit" value="Confirm" ></input>
 				</form>
 			</div>
 		);

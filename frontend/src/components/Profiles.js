@@ -7,11 +7,11 @@ const Profiles = (props) => {
 		<div>
 			<h4>$ Profiles</h4>
 			{props.profiles.map((profile) => (
-				<li key={profile.id}>
-					<Link to={`/profiles/${profile.id}`}>
-						{profile.name} | ${profile.balance}
-					</Link>
-				</li>
+				<div key={profile.id}>
+					<Link to={`/profiles/${profile.id}`} style={{color: "light green"}}>
+						{profile.name} 
+					</Link> 
+				</div>
 			))}
 		</div>
 	);

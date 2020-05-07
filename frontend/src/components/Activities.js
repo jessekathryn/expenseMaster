@@ -20,15 +20,15 @@ class Activities extends React.Component {
 			<div>
 				{this.props.activities &&
 					this.props.activities.map((activity) => (
-						<li key={activity.id}>
-							{activity.date} - {activity.kind} - {activity.amount}{" "}
-							<button onClick={() => this.visit(activity.id)}>
-								Likes {this.state[activity.id] ? this.state[activity.id] : 0}
+						<div key={activity.id}>
+							${activity.amount}0 | {activity.kind.toUpperCase()} | {activity.date} <br></br>
+							<button className="btn btn-primary" onClick={() => this.visit(activity.id)}>
+							Like {this.state[activity.id] ? this.state[activity.id] : 0}
 							</button>
-							<button onClick={() => this.handleDelete(activity)}>
-								Delete
+							<button className="btn btn-danger" onClick={() => this.handleDelete(activity)}>
+							Delete
 							</button>
-						</li>
+						</div>
 					))}
 			</div>
 		);

@@ -25,28 +25,34 @@ class ProfileInput extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<h4>$ New Profile</h4>
-				<form onSubmit={this.handleSubmit}>
-					<input
-						type="text"
-						placeholder="Name"
-						value={this.state.name}
-						name="name"
-						onChange={this.handleChange}
-					/>
-					<br />
-					<input
-						type="text"
-						placeholder="Starting Balance"
-						value={this.state.balance}
-						name="balance"
-						onChange={this.handleChange}
-					/>
-					<br />
-					<input type="submit" name="Add" />
-				</form>
-			</div>
+			<div className="media p-6">                
+			<form onSubmit={this.handleSubmit}>	
+				<input type="text"
+					className="form-control mb-1" 
+					placeholder="Name"
+					value={this.state.name}
+					name="name"
+					onChange={this.handleChange}
+				/>
+				<input
+					type="text"
+					className="form-control mb-1" 
+					placeholder="Balance"
+					value={this.state.balance}
+					name="balance"
+					onChange={this.handleChange}
+				/>
+				<input
+					type="text"
+					className="form-control mb-1" 
+					placeholder="Debt"
+					value={this.state.debt}
+					name="debt"
+					onChange={this.handleChange}
+				/>
+				<input className="btn btn-success" type="submit" value="Edit" ></input>
+			</form>	
+		  </div>
 		);
 	}
 }
