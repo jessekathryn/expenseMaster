@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import AppMenu from './AppMenu';
 import { Collapse } from 'reactstrap';
 
 
