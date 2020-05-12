@@ -25,7 +25,7 @@ class ActivityInput extends React.Component {
 
 	render() {
 		return (
-			  <div class="media p-6">                
+			  <div className="media p-6">                
 				<form onSubmit={this.handleSubmit}>	
 					<select className="form-control mb-1"
 						name="kind"

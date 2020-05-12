@@ -8,8 +8,7 @@ class ActivitiesContainer extends React.Component {
 			<div>
 				<ActivityInput profile={this.props.profile} />
 				<br />
-				<Activities
-					activities={this.props.profile && this.props.profile.activities}
+				<Activities activities={this.props.profile && this.props.profile.activities}
 				/>
 			</div>
 		);
