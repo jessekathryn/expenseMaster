@@ -2,8 +2,8 @@ import React, { Component, Suspense } from "react";
 import { Container } from 'reactstrap';
 import { connect } from 'react-redux';
 
-import { changeLayout } from '../redux/actions';
-import * as layoutConstants from '../../../constants/layout';
+import { changeLayout } from '../features/redux/actions';
+import * as layoutConstants from '../../constants/layout';
 
 import ThemeCustomizer from '../components/ThemeCustomizer';
 
