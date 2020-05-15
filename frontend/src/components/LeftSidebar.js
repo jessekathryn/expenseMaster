@@ -9,7 +9,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import { UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import * as FeatherIcon from 'react-feather';
 
-import AppMenu from '../AppMenu';
+import AppMenu from './AppMenu';
 import profilePic from '../assets/images/users/avatar-7.jpg';
 
 

@@ -22,7 +22,7 @@ const MenuItemWithChildren = ({ item, linkClassNames, subMenuClassNames, activat
                 <span> {item.name} </span>
                 <span className="menu-arrow"></span>
             </Link>
-            
+
             <ul
                 className={classNames(subMenuClassNames, 'mm-collapse', {
                     'mm-collapsed mm-show': activatedMenuItemIds.indexOf(item.id) >= 0,
@@ -84,8 +84,8 @@ class AppMenu extends Component {
     };
 
     componentDidMount = () => {
-        // if (!this.props.menu.menuItems) this.props.initMenu();
-        // else this.initMenu();
+        if (!this.props.menu.menuItems) this.props.initMenu();
+        else this.initMenu();
 
         this.props.history.listen((location, action) => {
             // hide menus in mobile
