@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import PerfectScrollbar from 'react-perfect-scrollbar';
-import 'react-perfect-scrollbar/dist/css/styles.css';
+import './features/node_modules/react-perfect-scrollbar/dist/css/styles.css';
 import { XCircle } from 'react-feather';
 
 class RightSideBar extends Component {

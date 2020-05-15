@@ -3,16 +3,16 @@ import React, { Component, Suspense } from 'react';
 import { connect } from 'react-redux';
 
 import { isUserAuthenticated } from '../helpers/authUtils';
-import * as layoutConstants from '../constants/layout';
+import * as layoutConstants from '../../constants/layout';
 
 // Lazy loading and code splitting -
 // Derieved idea from https://blog.logrocket.com/lazy-loading-components-in-react-16-6-6cea535c0b52
 const loading = () => <div></div>;
 
 // All layouts/containers
-const AuthLayout = React.lazy(() => import('../layouts/Auth'));
-const VerticalLayout = React.lazy(() => import('../layouts/Vertical'));
-const HorizontalLayout = React.lazy(() => import('../layouts/Horizontal'));
+const AuthLayout = React.lazy(() => import('../../layouts/Auth'));
+const VerticalLayout = React.lazy(() => import('../../layouts/Vertical'));
+const HorizontalLayout = React.lazy(() => import('../../layouts/Horizontal'));
 
 
 /**

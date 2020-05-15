@@ -5,7 +5,7 @@ import { fetchProfiles } from "../actions/fetchProfiles";
 import Profiles from "../components/Profiles";
 import Profile from "../components/Profile";
 import ProfileInput from "../components/ProfileInput";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/features/Navbar";
 
 class ProfilesContainer extends React.Component {
 	componentDidMount() {
