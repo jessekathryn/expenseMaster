@@ -3,10 +3,10 @@ import React, { Component, Suspense } from 'react';
 import { Container } from 'reactstrap';
 import { connect } from 'react-redux';
 
-import { changeSidebarTheme, changeSidebarType } from '../../../redux/actions';
-import * as layoutConstants from '../constants/layout';
+import { changeSidebarTheme, changeSidebarType } from '../redux/actions';
+import * as layoutConstants from '../../../constants/layout';
 
-import ThemeCustomizer from '../../ThemeCustomizer';
+import ThemeCustomizer from '../components/ThemeCustomizer';
 
 // code splitting and lazy loading
 // https://blog.logrocket.com/lazy-loading-components-in-react-16-6-6cea535c0b52

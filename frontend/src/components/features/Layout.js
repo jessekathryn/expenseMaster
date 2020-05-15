@@ -10,9 +10,9 @@ import * as layoutConstants from '../../constants/layout';
 const loading = () => <div></div>;
 
 // All layouts/containers
-const AuthLayout = React.lazy(() => import('../../layouts/Auth'));
-const VerticalLayout = React.lazy(() => import('../../layouts/Vertical'));
-const HorizontalLayout = React.lazy(() => import('../../layouts/Horizontal'));
+const AuthLayout = React.lazy(() => import('./layouts/Auth'));
+const VerticalLayout = React.lazy(() => import('./layouts/Vertical'));
+const HorizontalLayout = React.lazy(() => import('./layouts/Horizontal'));
 
 
 /**

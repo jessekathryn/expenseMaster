@@ -27,7 +27,7 @@ render() {
 					<Link to={`/profiles/${profile.id}`} style={{color: "light green"}}>
 						{profile.name} 
 					</Link> 
-					<button onClick={() => this.upVote(profile.id)}>
+					<button className="btn btn-primary" onClick={() => this.upVote(profile.id)}>
 							Like {this.state[profile.id] ? this.state[profile.id] : 0}</button>
 				</div>
 			))}
