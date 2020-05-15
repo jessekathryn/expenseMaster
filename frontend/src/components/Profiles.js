@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { allFlattenRoutes } from "./routes";
 
 class Profiles extends React.Component {
 	state = {	
-	 only2020: false
+	 only2020: false,
+	 allSorted: false
 	};
+
+	handleSort = (event) => {
+		console.log(event)
+		this.setState({
+			allSorted: !this.state.allSorted
+		})
+	}
 
 	handleOnClick2020 = (event) => {
 		console.log(event)
@@ -28,26 +35,43 @@ class Profiles extends React.Component {
 
 render() {
 	let displayProfiles = this.props.profiles;
-		// only2020 ? true : 
-		// 	displayProfiles
-		// else 
-		// 	display 2020
-		// end 
-
+	if (this.state.only2020) {
+		displayProfiles= this.props.profiles.filter(profile => profile.name.includes('2020'))
+		}
+	
+	if (this.state.allSorted){
+		displayProfiles= this.props.profiles.sort(function(a, b) {
+			var nameA = a.name.toUpperCase(); 
+			var nameB = b.name.toUpperCase(); 
+			if (nameA < nameB) {
+			  return -1;
+			}
+			if (nameA > nameB) {
+			  return 1;
+			}
+			return 0;
+		  });
+		}
+		
+		
 	return (
 		<div>
+			<button className="btn btn-success" onClick={this.handleSort}>
+				{this.state.allSorted ? 'UnSort All' : 'Sort'}
+			</button>
 			<button className="btn btn-success" onClick={this.handleOnClick2020}>
 				{this.state.only2020 ? 'All' : '2020'}
 			</button>
-			<h4>$ Profiles</h4>
+			<h4>$ Profiles </h4>
+
 			{displayProfiles.map((profile) => (
 				<div key={profile.id}>
-					<Link to={`/profiles/${profile.id}`} style={{color: "light green"}}>
-						{profile.name} 
-					</Link> 
-					<br></br>
-					<button className="btn btn-primary" onClick={() => this.upVote(profile.id)}>
-					Like {this.state[profile.id] ? this.state[profile.id] : 0}</button>
+				<Link to={`/profiles/${profile.id}`} style={{color: "light green"}}>
+					{profile.name} 
+				</Link> 
+				<br></br>
+				<button className="btn btn-primary" onClick={() => this.upVote(profile.id)}>
+				Like {this.state[profile.id] ? this.state[profile.id] : 0}</button>
 				</div>
 			))}
 		</div>
@@ -57,23 +81,3 @@ render() {
 }
 
 export default Profiles;
-
-
-
-// const Profiles = (props) => {
-// 	console.log(props);
-// 	return (
-// 		<div>
-// 			<h4>$ Profiles</h4>
-// 			{props.profiles.map((profile) => (
-// 				<div key={profile.id}>
-// 					<Link to={`/profiles/${profile.id}`} style={{color: "light green"}}>
-// 						{profile.name} 
-// 					</Link> 
-// 					<button onClick={() => this.handleOnClick(profile)}>Upvote</button>
-// 				</div>
-// 			))}
-// 		</div>
-// 	);
-// };
-

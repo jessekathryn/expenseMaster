@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import classNames from 'classnames';
 import { Briefcase, FolderPlus, HardDrive } from 'react-feather';
-import Sortable from 'react-sortablejs';
+// import Sortable from 'react-sortablejs';
 
 import PageTitle from '../../../components/PageTitle';
 
@@ -54,17 +54,17 @@ const Task = (task) => {
 const TaskContainer = ({ tasks }) => {
     tasks = tasks.map((task, idx) => (<Task key={idx} data-id={task.id} {...task}></Task>));
 
-    return (
-        <Sortable
-            options={{
-                group: 'shared',
-                animation: 150
-            }}
-            tag="div"
-        >
-            {tasks}
-        </Sortable>
-    );
+    // return (
+    //     // <Sortable
+    //     //     options={{
+    //     //         group: 'shared',
+    //     //         animation: 150
+    //     //     }}
+    //     //     tag="div"
+    //     // >
+    //     //     {tasks}
+    //     // </Sortable>
+    // );
 };
 
 
