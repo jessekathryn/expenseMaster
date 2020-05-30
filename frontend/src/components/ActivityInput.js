@@ -31,8 +31,8 @@ class ActivityInput extends React.Component {
 						name="kind"
 						value={this.state.kind}
 						onChange={this.handleChange}>
-						<option>Deposit</option>
-						<option>Debit</option>
+						<option>deposit</option>
+						<option>debit</option>
 					</select>
 					<input type="text"
 						className="form-control mb-1" 

@@ -6,6 +6,7 @@ class ProfileInput extends React.Component {
 	state = {
 		name: "",
 		balance: "",
+		debt: "",
 	};
 
 	handleChange = (event) => {
@@ -20,6 +21,7 @@ class ProfileInput extends React.Component {
 		this.setState({
 			name: "",
 			balance: "",
+			debt: "",
 		});
 	};
 
@@ -50,7 +52,7 @@ class ProfileInput extends React.Component {
 					name="debt"
 					onChange={this.handleChange}
 				/>
-				<input className="btn btn-success" type="submit" value="Edit" ></input>
+				<input className="btn btn-success" type="submit" value="Add"></input>
 			</form>	
 		  </div>
 		);

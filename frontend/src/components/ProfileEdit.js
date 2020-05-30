@@ -6,6 +6,7 @@ class ProfileEdit extends React.Component {
 	state = {
 		name: "",
 		balance: "",
+		debt: "",
 	};
 
 	handleChange = (event) => {
@@ -21,6 +22,7 @@ class ProfileEdit extends React.Component {
 		this.setState({
 			name: "",
 			balance: "",
+			debt: "",
 		});
 	};
 

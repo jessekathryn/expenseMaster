@@ -5,6 +5,7 @@ class Profile < ApplicationRecord
 def update_balance(activity)
     if activity.kind == 'deposit'
         self.balance = self.balance + activity.amount
+        self.debt = self.debt - activity.amount
         self.save
     elsif activity.kind == 'debit'
         if self.balance >= activity.amount

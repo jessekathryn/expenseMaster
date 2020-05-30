@@ -27,6 +27,7 @@ class Api::V1::ProfilesController < ApplicationController
     def update
       @profile = Profile.find(params[:id])
       @profile.update(name: params["profile"]["name"])
+      @profile.update(debt: params["profile"]["debt"])
       @profile.save
       render json: @profile
     end
